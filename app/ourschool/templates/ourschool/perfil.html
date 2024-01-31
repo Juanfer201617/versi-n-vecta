@@ -1,0 +1,64 @@
+
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet"  href="{% static 'css/style.css' %}">
+
+
+</head>
+
+
+<body>
+ <div class="contenedor" >
+    <div class="carta" >
+        <h4>Actualizar Perfil</h4>
+        <img src="{% static 'img/imagen_perfil_prede.png' %}">
+
+<!--inicio-->
+
+    {% csrf_token %}
+    <div class="container">
+
+        <div class="container"><br>
+
+            <div class="mb-4">
+                <label> Nombre Completo </label>
+                <input type="text" class="form-control" name="nombre_apellido" placeholder="Nombre Completo">
+            </div>
+
+            <div class="mb-4">
+                <label>Correo electrónico </label>
+                <input type="email" class="form-control" name="correo" placeholder="Correo electrónico">
+            </div>
+
+            <div class="mb-4">
+                <label>Contraseña </label>
+                <input type="password" class="form-control" name="contrasena" placeholder="Ingrese una contraseña">
+            </div>
+
+            <div class="mb-4">
+            <label> Teléfono </label>
+            <input type="text" class="form-control" name="telefono" placeholder="Teléfono">
+            </div>
+            
+            <a href="{% url 'iniciar' %}"><button type="button">Atrás</button></a>
+            <button type="submit">guardar cambios</button>
+        </div>
+    </div>
+</form>
+<!--fin-->
+    </div>
+ </div>
+
+
+
+</body>
+</html>

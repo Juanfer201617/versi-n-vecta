@@ -1,0 +1,320 @@
+
+    body{
+    background-color: #EFFFFF;
+
+}
+
+#nav{
+    background-color: #0096A3;
+
+}
+
+#logo{
+        background-color: #FFFFFF;
+        width: 90px;
+        height: 90px;
+        border-radius: 30px;
+}
+
+
+
+
+/* jumbotron */
+
+#jumbotron{
+    background-color: #0096A3;
+    height: 120px;
+
+}
+.centrado {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.centrado-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.centrado-description {
+    font-size: 16px;
+}
+
+/* color/espaceado de botones login/singup */
+
+#login_boton{
+
+ margin-left: 20px;
+ background-color:#0AA116 ;
+ border-color: black;
+ border-radius: 18px;
+}
+
+#singup_boton{
+    background-color: #0AA116 ;
+    border-color: black;
+    border-radius: 18px;
+}
+#close_boton{
+    background-color: #0AA116 ;
+    border-color: black;
+    border-radius: 18px;
+}
+#perfil_boton{
+    background-color: #0AA116 ;
+    border-color: black;
+    border-radius: 18px;
+}
+
+
+#Rol{
+    align-items: center;
+}
+
+/* centrado imagenes rotativas */
+
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+
+
+
+
+/* Centrar todos los elementos h1 y p */
+h1,h3, p {
+        text-align: center;
+    }
+
+img {
+         display: block;
+         margin: 0 auto;
+}
+
+
+/*imagenes rotativas*/
+
+/* centrado imagenes rotativas */
+
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+
+/*css imagenes rotativas*/
+
+
+.image-container {
+    position: relative;
+    width: 450px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.image-container img.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+@keyframes imageChange {
+    0%, 100% {
+        opacity: 0;
+    }
+    10%, 90% {
+        opacity: 1;
+    }
+}
+
+
+footer{
+    background-color:#006624;
+
+}
+
+#footer2{
+
+    background-color: #000000 ;
+    height: 35px;
+}
+
+
+
+
+
+/* titulo animado */
+
+.animated-h3 {
+    animation: growShrink 2s ease-in-out infinite alternate;
+    /* Nombre de la animación, duración, temporización y repetición */
+}
+
+@keyframes growShrink {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+a {
+    color: white;
+}
+
+#inicia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+/* estilos de login */
+
+
+#barra{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+#login{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+#loginclass{
+        background-color:#0096A3;
+    }
+
+    button{
+        background-color: #0AA116;
+        border-bottom: black;
+        border-style:groove;
+        border-radius: 18px;
+    }
+
+    #text-login{
+        text-align: center;
+    }
+
+    #ordenar{
+        margin-left: 13px;
+    }
+
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.perfil-card {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.profile-details h1 {
+    margin: 0;
+    color: #333;
+}
+
+.profile-details p {
+    margin: 5px 0;
+    color: #666;
+}
+
+/* editar perfil */
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;  /* Cambiado a min-height para garantizar que el contenedor sea al menos del 100% de la altura de la ventana */
+}
+
+.carta {
+    background-color: #0096A3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 2px solid black;  /* Añadido un borde sólido de 2px en lugar de border-bottom */
+    border-radius: 18px;
+}
+
+/* vistas profesor*/
+
+.card {
+    position: relative;
+    height: 70%;
+    width: 90%; /* ajusta el ancho según sea necesario */
+    margin: 40px auto; /* centra la tarjeta horizontalmente */
+    background: linear-gradient(to bottom, #1495bd 50%, #f2f2f2 50%); /* gradiente de verde claro a gris claro */
+}
+
+.card-info {
+    padding: 20px;
+}
+
+.profile-circle {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-section {
+    position: absolute;
+    bottom: 10px; /* distancia desde la parte inferior */
+    right: 10px; /* distancia desde la parte derecha */
+}
+
+#logo2 {
+    position: absolute;
+    top: 65px; /* ajusta la posición vertical según sea necesario */
+    right: 70px; /* ajusta la posición horizontal según sea necesario */
+    border-radius: 50%;
+    width: 90px; /* ajusta el tamaño según sea necesario */
+    height: 90px; /* ajusta el tamaño según sea necesario */
+    z-index: 1; /* establece un valor de z-index mayor que los botones */
+}
+
+.button-section .btn {
+    margin-bottom: 5px; /* ajusta la distancia entre los botones y la imagen */
+}
+#Descripción{
+    position: relative;
+    right: 10%;
+    margin: 105px auto; /* centra la tarjeta horizontalmente */
+
+}
